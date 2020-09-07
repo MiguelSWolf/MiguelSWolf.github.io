@@ -1,0 +1,23 @@
+@function stroke($stroke, $color) {
+  $shadow: ();
+  $from: $stroke * -1;
+  @for $i from $from through $stroke {
+    @for $j from $from through $stroke {
+      $shadow: append($shadow, $i * 1px $j * 1px 0 $color, comma);
+    }
+  }
+  @return $shadow;
+}
+
+
+@mixin tablet {
+  @media (min-width: #{$screenTablet}) and (max-width: #{$screenDesktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$screenDesktop}) {
+    @content;
+  }
+}

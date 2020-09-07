@@ -1,4 +1,8 @@
 export default {
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0', // default: localhost
+  },
   /*
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
@@ -17,7 +21,10 @@ export default {
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+      },
       {
         hid: 'description',
         name: 'description',
@@ -53,7 +60,7 @@ export default {
    */
   modules: ['@nuxtjs/style-resources'],
   styleResources: {
-    scss: ['~/assets/scss/variables.scss'],
+    scss: ['~/assets/scss/index.scss'],
   },
   /*
    ** Build configuration
