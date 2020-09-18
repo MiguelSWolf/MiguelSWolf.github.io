@@ -3,6 +3,9 @@ export default {
     port: 8000, // default: 3000
     host: '0.0.0.0', // default: localhost
   },
+  generate: {
+    dir: 'docs'
+  },
   /*
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
