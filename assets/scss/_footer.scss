@@ -1,0 +1,30 @@
+
+
+footer {
+  padding: 3rem 0;
+  color: $lightColor;
+  .title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.1em;
+    span {
+      font-size: 1rem;
+    }
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 900;
+      mix-blend-mode: difference;
+    }
+  }
+  .background.has-letters {
+    align-items: flex-end;
+    h2 {
+      transform: rotate(-90deg) translateX(-200px);
+    }
+  }
+}

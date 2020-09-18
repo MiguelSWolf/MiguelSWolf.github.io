@@ -1,0 +1,80 @@
+
+$boxPaddingTop: 9rem;
+.box {
+  padding-top: $boxPaddingTop;
+  position: relative;
+
+  & &-title {
+    font-weight: 900;
+    position: absolute;
+    top: $boxPaddingTop - 6rem;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    font-size: 5rem;
+    z-index: 100;
+    mix-blend-mode: difference;
+    margin: 0;
+    text-align: center;
+  }
+  & &-content {
+    position: relative;
+    padding-top: 100%;
+    &:before, .content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      content: '';
+      box-sizing: border-box;
+    }
+    &:before {
+      background: $lightColor;
+    }
+    .content {
+      font-size: 1.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 1.5rem 1.5rem;
+      color: $darkColor;
+      margin: 0;
+    }
+  }
+}
+.box-about {
+
+}
+.about {
+  .background.has-letters {
+    align-items: flex-end;
+    transform: translateY(-152px);
+  }
+}
+
+
+.list {
+  & &-title {
+    font-size: 7rem;
+    font-weight: 900;
+    word-break: break-all;
+  }
+  .items {
+    .item {
+      font-size: 1rem;
+      line-height: 1.5em;
+      font-weight: 900;
+      margin: 0;
+      padding: 0.25rem 0;
+      &.is-big {
+        margin-top: 2rem;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+

@@ -11,13 +11,25 @@
 
 
 @mixin tablet {
-  @media (min-width: #{$screenTablet}) and (max-width: #{$screenDesktop - 1px}) {
+  @media (min-width: #{$screenTablet}) {
     @content;
   }
 }
 
 @mixin desktop {
   @media (min-width: #{$screenDesktop}) {
+    @content;
+  }
+}
+
+@mixin wide {
+  @media (min-width: #{$screenWide}) {
+    @content;
+  }
+}
+
+@mixin fullhd {
+  @media (min-width: #{$screenFullHD}) {
     @content;
   }
 }

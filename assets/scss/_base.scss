@@ -40,3 +40,26 @@ section, footer {
     justify-content: center;
   }
 }
+
+
+@include tablet {
+  .container {
+    width: 760px;
+    margin: 0 auto;
+  }
+}
+@include desktop {
+  .container {
+    width: 1000px;
+  }
+}
+@include wide {
+  .container {
+    width: 1400px;
+  }
+}
+@include fullhd {
+  .container {
+    width: 1720px;
+  }
+}
