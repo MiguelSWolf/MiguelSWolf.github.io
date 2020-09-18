@@ -25,6 +25,9 @@ footer {
     align-items: flex-end;
     h2 {
       transform: rotate(-90deg) translateX(-200px);
+      @include desktop {
+        transform: rotate(-90deg) translateX(-400px);
+      }
     }
   }
 }

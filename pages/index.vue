@@ -6,11 +6,13 @@
     <div class="container">
       <div class="box box-about">
         <h2 class="box-title">Hello There</h2>
-        <div class="box-content">
-          <h3 class="content">
-            My name is Miguel Wolf, and I'm a front-end developer based in Brazil.
-            I've been working in this area for almost 10 years.
-          </h3>
+        <div>
+          <div class="box-content">
+            <h3 class="content">
+              My name is Miguel Wolf, and I'm a front-end developer based in Brazil.
+              I've been working in this area for almost 10 years.
+            </h3>
+          </div>
         </div>
       </div>
     </div>

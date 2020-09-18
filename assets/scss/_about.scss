@@ -36,7 +36,8 @@ $boxPaddingTop: 9rem;
       background: $lightColor;
     }
     .content {
-      font-size: 1.4rem;
+      font-size: 1rem;
+      line-height: 1.8em;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -47,19 +48,40 @@ $boxPaddingTop: 9rem;
   }
 }
 .box-about {
-
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    > div {
+      grid-column: 6/12;
+    }
+    .box-title {
+      top: calc(50% - #{$boxPaddingTop});
+      grid-column: 2/10;
+      font-size: 100px;
+    }
+    .box-content .content {
+      width: 57%;
+      padding-left: 15%;
+    }
+  }
 }
 .about {
   .background.has-letters {
     align-items: flex-end;
-    transform: translateY(-152px);
+    transform: translateY(0px);
+    @include desktop {
+      justify-content: flex-start;
+      h2 {
+        width: 800px;
+      }
+    }
   }
 }
 
 
 .list {
   & &-title {
-    font-size: 7rem;
+    font-size: 100px;
     font-weight: 900;
     word-break: break-all;
   }
@@ -73,6 +95,40 @@ $boxPaddingTop: 9rem;
       &.is-big {
         margin-top: 2rem;
         font-size: 2.5rem;
+      }
+    }
+  }
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    & &-title {
+      grid-column: 2/5;
+
+    }
+    .items {
+      grid-column: 6/11;
+      column-count: 3;
+      .item {
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        -webkit-column-break-after: avoid;
+        page-break-after: avoid;
+        break-after: avoid;
+        -webkit-column-break-before: avoid;
+        page-break-before: avoid;
+        break-before: avoid;
+        &.is-big {
+          -webkit-column-break-inside: initial;
+          page-break-inside: initial;
+          break-inside: initial;
+          -webkit-column-break-after: initial;
+          page-break-after: initial;
+          break-after: initial;
+          -webkit-column-break-before: initial;
+          page-break-before: initial;
+          break-before: initial;
+        }
       }
     }
   }
