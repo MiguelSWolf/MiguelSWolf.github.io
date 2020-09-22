@@ -93,7 +93,7 @@ $boxPaddingTop: 9rem;
       margin: 0;
       padding: 0.25rem 0;
       &.is-big {
-        margin-top: 2rem;
+        padding-top: 2rem;
         font-size: 2.5rem;
       }
     }
@@ -103,12 +103,12 @@ $boxPaddingTop: 9rem;
     grid-template-columns: repeat(12, 1fr);
     & &-title {
       grid-column: 2/5;
-
     }
     .items {
       grid-column: 6/11;
       column-count: 3;
-      .item {
+      .group {
+
         -webkit-column-break-inside: avoid;
         page-break-inside: avoid;
         break-inside: avoid;
@@ -118,17 +118,8 @@ $boxPaddingTop: 9rem;
         -webkit-column-break-before: avoid;
         page-break-before: avoid;
         break-before: avoid;
-        &.is-big {
-          -webkit-column-break-inside: initial;
-          page-break-inside: initial;
-          break-inside: initial;
-          -webkit-column-break-after: initial;
-          page-break-after: initial;
-          break-after: initial;
-          -webkit-column-break-before: initial;
-          page-break-before: initial;
-          break-before: initial;
-        }
+      }
+      .item {
       }
     }
   }
