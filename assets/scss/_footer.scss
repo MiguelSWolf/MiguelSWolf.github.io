@@ -30,4 +30,20 @@ footer {
       }
     }
   }
+
+  @include desktop {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    .title {
+      grid-column: 2/9;
+      font-size: 6.25rem;
+      font-weight: 900;
+    }
+    nav {
+      grid-column: 9/12;
+      text-align: right;
+    }
+  }
 }

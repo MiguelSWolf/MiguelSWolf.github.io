@@ -52,7 +52,7 @@
             </div>
 
             <div class="group">
-              <p class="item is-big">Database</p>
+              <p class="item is-big">DB</p>
               <p class="item">MySQL</p>
               <p class="item">MariaDB</p>
               <p class="item">SQLite</p>
@@ -61,7 +61,7 @@
             </div>
 
             <div class="group">
-              <p class="item is-big">Amazon AWS</p>
+              <p class="item is-big">AWS</p>
               <p class="item">Amazon SES</p>
               <p class="item">Amazon EC2</p>
               <p class="item">Amazon E3</p>

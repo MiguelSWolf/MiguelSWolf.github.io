@@ -5,7 +5,7 @@
     </div>
     <div class="container">
       <div class="title">
-        Let's talk about stuff<br />
+        Let's talk about stuff<br /><br />
         <span>Made with lots of coffe</span>
       </div>
       <nav>
