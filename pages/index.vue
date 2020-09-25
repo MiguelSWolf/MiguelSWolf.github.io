@@ -19,9 +19,7 @@
     <section class="main technology">
       <div class="container">
         <div class="list">
-          <h2 class="list-title">
-            Technology
-          </h2>
+          <h2 class="list-title">Technology</h2>
           <div class="items">
             <div class="group">
               <p class="item is-big">VueJS</p>
@@ -79,8 +77,8 @@
 }
 </style>
 
-<script lang="ts">
+<!--script lang="ts">
 import Vue from 'vue'
 
 export default Vue.extend({})
-</script>
+</script-->
